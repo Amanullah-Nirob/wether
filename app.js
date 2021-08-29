@@ -19,7 +19,7 @@ input.value=``
 var key=`5544e22f5348ddc021d94699bc791a30`
 
 
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputvalue}&appid=${key}`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputvalue}&appid=${key}`)
 .then(response=>response.json())
 .then(data=>oma(data))
 }
